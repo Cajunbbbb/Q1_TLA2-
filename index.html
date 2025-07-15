@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LULAB_Q1TLA2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f5f5f7;
+            color: #1d1d1f;
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(255,255,255,0.85);
+            color: #1d1d1f;
+            padding: 40px 0 10px 0;
+            text-align: center;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .apple-logo {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 32px;
+            top: 32px;
+        }
+        .profile-img {
+            display: block;
+            margin: 50px auto 20px auto;
+            border-radius: 30px;
+            border: none;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            background: #fff;
+        }
+        .name {
+            color: #1d1d1f;
+            text-align: center;
+            font-size: 2.8em;
+            font-weight: 700;
+            margin-top: 10px;
+            letter-spacing: -1px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #86868b;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        .details {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0 0 0;
+            font-size: 1.1em;
+        }
+        .details strong {
+            color: #1d1d1f;
+        }
+        .bio {
+            background: #fff;
+            border-radius: 22px;
+            margin: 40px auto 40px auto;
+            max-width: 600px;
+            padding: 36px 32px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            font-size: 1.18em;
+            color: #1d1d1f;
+            line-height: 1.7;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+            padding: 0;
+            margin: 40px 0 0 0;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #1d1d1f;
+            background: transparent;
+            padding: 10px 24px;
+            border-radius: 22px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav a:hover {
+            background: #e5e5ea;
+            color: #0071e3;
+        }
+        .background-img {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .background-img img {
+            width: 100vw; height: 100vh; object-fit: cover; opacity: 0.10;
+        }
+        @media (max-width: 700px) {
+            .details { flex-direction: column; gap: 10px; }
+            .bio { padding: 18px 10px; }
+            .profile-img { width: 120px; height: 120px; }
+            .apple-logo { left: 10px; top: 10px; width: 28px; height: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="name">Vinze Jerhald J. Lulab</h1>
+        <div class="subtitle">Aspiring Graphic Designer &amp; Web Developer</div>
+    </header>
+    <div class="background-img">
+        <img src="gold.jpg" alt="Background">
+    </div>
+    <img src="pogi.jpg" alt="Profile" class="profile-img">
+    <div class="details">
+        <span><strong>College:</strong> University of Immaculate Conception</span>
+        <span><strong>Nationality:</strong> Filipino</span>
+        <span><strong>Location:</strong> Davao City</span>
+    </div>
+    <div class="bio">
+        <p>
+           A creative and detail-oriented individual with a passion for graphic design and web development. I have a strong foundation in design principles and a keen eye for aesthetics.
+        </p>
+    </div>
+    <ul class="nav">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>
